@@ -1,5 +1,7 @@
 git remote add origin https://'*key*'@github.com/JakKoc1/baza1.git
 
+
+
 git remote get-url origin
 
 git config --local user.name Ja
@@ -10,6 +12,8 @@ git commit -a -m "test"
 
 git push
 
+
+
 materiały:
 
 https://drive.google.com/drive/folders/1O1jaZERyK-c5zE4nFmvGiPRq49EBIdP2
@@ -17,6 +21,8 @@ https://drive.google.com/drive/folders/1O1jaZERyK-c5zE4nFmvGiPRq49EBIdP2
 wykłady:
 
 https://drive.google.com/drive/folders/1f0UB4lYdH0QKCK58Ne9f_9sxnZvPbHN_
+
+
 
 =====================
 
