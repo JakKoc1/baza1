@@ -1,19 +1,3 @@
-git remote add origin https://'*key*'@github.com/JakKoc1/baza1.git
-
-
-
-git remote get-url origin
-
-git config --local user.name Ja
-
-git config --local user.email email@at.me
-
-git commit -a -m "test"
-
-git push
-
-
-
 materiały:
 
 https://drive.google.com/drive/folders/1O1jaZERyK-c5zE4nFmvGiPRq49EBIdP2
