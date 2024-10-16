@@ -35,3 +35,4 @@ Stanowisko(1, 1, 'osobowe, ciezarowe, autobusy, tramwaje')
 Pracownik(1, 'Tomasz', 'Nowak', 10000)
 
 Zlecenie (1, 1, 1, 1, 21.06.2000, 16:00, 999, 'pf')
+
