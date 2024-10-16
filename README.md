@@ -1,3 +1,5 @@
+git remote add origin https://'*key*'@github.com/JakKoc1/baza1.git
+
 git remote get-url origin
 git config --local user.name name
 git config --local user.email email@at.me
