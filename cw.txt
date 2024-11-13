@@ -1,0 +1,17 @@
+Zadanie 1
+1.
+create table postac( id_postaci int NOT NULL AUTO_INCREMENT, nazwa varchar(40), rodzaj enum('wiking', 'ptak', 'kobieta'), data_ur date, wiek tinyint(1) unsigned, primary key (id_postaci));
+2.
+insert into postac (nazwa, rodzaj, wiek, data_ur) values ('Bjorn', 1, 40, '1984-11-06'), ('Drozd', 2, 2, '2022-05-01'), ('Tesciowa', 3, 60, '1936-12-21');
+3.
+update postac set wiek = 88 where nazwa = "Tesciowa"
+
+Zadanie 2
+1.
+create table walizka(id_walizki int auto_increment, primary key (id_walizki), pojemnosc float unsigned, kolor enum('rozowy', 'czerwony', 'teczowy', 'zolty'), id_wlasciciela int, foreign key (id_wlasciciela) references postac(id_postaci) on delete cascade);
+2.
+alter table walizka alter kolor set default 'rozowy';
+3.
+insert into walizka (pojemnosc, kolor , id_wlasciciela) values (5.5, 'czerwony', 1), (3, 'teczowy', 3);
+
+Zadanie 3
