@@ -3,6 +3,9 @@
 -- tiny.cc/bd_2024
 -- tiny.cc/bdcw_2024
 
+
+
+
 -- ---------------------------------------------
 -- Lekcja 1
 -- Zadanie 1
@@ -60,3 +63,63 @@ drop table izba;
 
 -- ---------------------------------------------
 -- Lekcja 2
+-- zadanie 1
+-- a
+/* WIP
+delete from postac where
+-- b
+alter table postac drop primary key ()
+
+alter table postac add (pesel varchar(11), primary key (pesel))
+
+alter table postac MODIFY rodzaj enum
+
+insert into postac Values ('Getruda','Nieszczera')
+*/
+-- ---------------------------------------------
+
+-- ---------------------------------------------
+-- Lekcja 3
+-- zadanie 1
+-- 1
+/* external database
+create table infds_kochanowskij.kreatura as select * from wikingowie.kreatura;
+create table infds_kochanowskij.zasob as select * from wikingowie.zasob;
+create table infds_kochanowskij.ekwipunek as select * from wikingowie.ekwipunek;
+-- local version below without values*/
+CREATE TABLE kreatura (
+    idKreatury int not null,
+    nazwa varchar(30) default null,
+    rodzaj varchar(30) default null,
+    dataUr date default null,
+    waga int unsigned default null,
+    udzwig int unsigned default null
+);
+
+CREATE TABLE zasob (
+    idZasobu int not null default '0',
+    nazwa varchar(50) default null,
+    waga float(6,2) default null,
+    ilosc int unsigned default null,
+    dataPozyskania date default null,
+    rodzaj varchaar(50) default null
+);
+
+CREATE TABLE ekwipunek (
+    idEkwpipunku int not null default '0',
+    idKreatury int default null,
+    idZasobu int default null,
+    ilosc int unsigned default null
+);
+-- 2
+select * from zasob;
+-- 3
+select * from zasob where rodzaj = 'jedzenie';
+-- 4
+select idZasobu, ilosc from zasob where idZasobu in (1,3,5);
+
+-- zadanie 2*
+-- 1
+/* WIP
+select * from kreatura where 
+*/
